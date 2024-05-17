@@ -109,23 +109,5 @@ public class Card {
     }
 
     
-    public static ArrayList<Card> removeCard(Card c, ArrayList<Card> arr){
-//        ArrayList<Card> deck = Card.buildDeck();
-//        for(int d = 0; d<deck.size(); d++){
-//            for(int h = 0; h<arr.size(); h++){
-//                if(deck.get(d).equals(arr.get(h))){
-//                    deck.remove(d);
-//                }
-//            }
-//        }
-        for(int i = 0; i<arr.size(); i++){
-            if(arr.get(i).equals(c)){
-                arr.remove(i);
-                int r = (int)(Math.random()*deck.size());
-                Card a = deck.remove(r);
-                arr.add(a);
-            }
-        }
-        return arr;
-    }
+
 }
